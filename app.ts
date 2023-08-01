@@ -10,7 +10,7 @@ import addProfilePic from './Router/user/porfilepic'
 import login from './Router/user/login'
 import signup from './Router/user/signup'
 import { addProducts } from './Controllers/products/addproducts';
-import { getProduct } from './Controllers/products/getUsreporducts';
+// import { getProduct } from './Controllers/products/getUsreporducts';
 import forgotpass from './Router/user/forgotpass'
 import { addbid } from './Controllers/products/addBid';
 const app = express();
@@ -18,11 +18,11 @@ const app = express();
 const port=process.env.PORT;
 app.use(express.json())
 dotenv.config();
-app.post('/updateProduct' , updateProduct)
-app.post('/addproduct' ,addProducts)
-app.get('/getproduct', getProduct)
-app.post('/addbid' , addbid )
-app.get('/getallprod' , getallProducts)
+// app.post('/updateProduct' , updateProduct)
+// app.post('/addproduct' ,addProducts)
+// app.get('/getproduct', getProduct)
+// app.post('/addbid' , addbid )
+// app.get('/getallprod' , getallProducts)
 
 // app.post('/testapi' , testapi)
 app.use('/user' , addProfilePic)
